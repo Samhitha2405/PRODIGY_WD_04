@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2e1b47;
+    color: #fff;
+}
+h1 {
+    font-family: 'Lobster', cursive; /* Aesthetic font */
+    font-size: 2em;
+    
+}
+header {
+    background-color: #2e1b47;
+    padding: 20px;
+}
+
+/* Style for the fixed navbar */
+
+
+nav {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #f39c12;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.languages {
+    display: flex;
+    gap: 10px;
+}
+
+.header-content {
+    padding: 50px 0px 0px 120px;
+    text-align: left;
+    max-width: 50%;
+    float: left; /* Position to the left */
+}
+
+.header-content h2 {
+    font-size: 2.5em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+.btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px; /* Add curved edges */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Make the link look like a button */
+}
+
+.header-image {
+    max-width: 80%;
+    float: right; /* Position to the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 300px;
+}
+
+.header-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f39c12; /* optional border */
+}
+
+.about, .services, .skills, .work, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    clear: both; /* Clear floats */
+    
+}
+
+.about h2, .services h2, .skills h2, .work h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 1.3em;
+    padding:20px 20px 20px 20px;
+}
+
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px; /* Add margin bottom to create space between heading and services */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background-color: #3e2b57;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(25% - 20px); /* Set width for each service to fit 4 services per row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.service ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.service ul li {
+    position: relative; /* Position relative to place the custom bullet */
+    margin-bottom: 5px; /* Add bottom margin to create space between list items */
+    padding-left: 1.5em; /* Add left padding to create space for custom bullet */
+}
+
+.service ul li::before {
+    content: "\2022"; /* Unicode character for bullet point */
+    color:#f39c12; /* Set color of the bullet point */
+    font-size: 2em; /* Make the bullet point larger */
+    position: absolute; /* Position absolute to place it in front */
+    left: 0; /* Align bullet to the left */
+    top: 0; /* Align bullet to the top */
+}
+
+
+.work {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.work h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.work-item {
+    background-color: #3e2b57;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width to fit three items per row */
+}
+
+.work-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.work-item h3 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: #2e1b47;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+.social-links img {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    padding:20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 20px; /* Add margin bottom to create space between each skill */
+    margin-right: 20px; /* Add margin right to create space between each skill */
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3e2b57;
+}
+
+.circle::after {
+    content: attr(data-percentage) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.circle[data-percentage="90"] {
+    background: conic-gradient(#f39c12 0% 90%, #3e2b57 90% 100%);
+}
+
+.circle[data-percentage="85"] {
+    background: conic-gradient(#f39c12 0% 85%, #3e2b57 85% 100%);
+}
+
+.circle[data-percentage="80"] {
+    background: conic-gradient(#f39c12 0% 80%, #3e2b57 80% 100%);
+}
+
+.circle[data-percentage="75"] {
+    background: conic-gradient(#f39c12 0% 75%, #3e2b57 75% 100%);
+}
+
+.circle[data-percentage="70"] {
+    background: conic-gradient(#f39c12 0% 70%, #3e2b57 70% 100%);
+}
